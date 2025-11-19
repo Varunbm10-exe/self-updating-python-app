@@ -25,7 +25,7 @@ current_tag = get_current_tag()
 print(f"Current version: {current_tag}")
 
 while True:
-    # Continuous heartbeat message
+    # Continuous heartbeat messages
     print(f"Running version varunnn: {current_tag}")
     time.sleep(10)  # Check every 10 seconds
 

@@ -18,13 +18,14 @@ current_tag = get_current_tag()
 print(f"Current version: {current_tag}")
 
 while True:
-    # Continuous printing
+    # Continuous printingggggggggggggggggggggggggggggggg
     print(f"Running version: {current_tag}")
     time.sleep(10)  # print every 10 seconds
-    
-    # Pull latest changes
+
+    # Pull latest changes and fetch tags
     subprocess.run(["git", "pull"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
-    
+    subprocess.run(["git", "fetch", "--tags"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+
     # Check if tag changed
     new_tag = get_current_tag()
     if new_tag != current_tag:

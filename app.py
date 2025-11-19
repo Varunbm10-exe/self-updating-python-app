@@ -13,7 +13,7 @@ def restart_app():
     print("Restarting app to apply updates...")
     os.execv(sys.executable, [sys.executable] + sys.argv)
 
-print("Starting app...")
+print("Starting app change...")
 current_tag = get_current_tag()
 print(f"Current version: {current_tag}")
 

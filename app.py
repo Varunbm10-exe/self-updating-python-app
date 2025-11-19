@@ -11,7 +11,7 @@ def restart_app():
 print("Starting app...")
 print("Hello Varun, this is the current version of the app.")
 
-# Track last commit hash
+# Track last commit hashh
 last_commit = subprocess.getoutput("git rev-parse HEAD")
 
 while True:

@@ -20,13 +20,13 @@ def restart_app():
     print("Restarting app to apply updates...")
     os.execv(sys.executable, [sys.executable] + sys.argv)
 
-print("Starting app...")
+print("Starting app ...")
 current_tag = get_current_tag()
 print(f"Current version: {current_tag}")
 
 while True:
     # Continuous heartbeat message
-    print(f"Running version: {current_tag}")
+    print(f"Running version lesssssssgooooo: {current_tag}")
     time.sleep(10)  # Check every 10 seconds
 
     # Pull latest changes from GitHub
